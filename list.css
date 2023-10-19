@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    --primary: #009A88;
+    --secondary: #1E2125;
+    --background: #242A30;
+    --font-grey: #777482;
+    --font-white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+
+.headLine {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.profileBtnHeadline {
+    padding: 17px;
+    border-radius: 50%;
+    background: var(--secondary);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileIconAdd {
+    color: var(--font-white);
+    font-size: 20px !important;
+}
+
+.backToListBtn {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    background: var(--secondary);
+    border: none;
+    color: var(--font-white);
+    padding: 5px 13px;
+}
+
+.size-18 {
+    font-size: 18px !important;
+}
+
+.size-30 {
+    font-size: 40px !important;
+}
+
+.list > h1 {
+    color: var(--font-white);
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.shoppingItem {
+    width: 100px;
+    height: 100px;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px;
+    color: var(--font-white);
+    margin: 10px;
+}
+
+.itemInformation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemInformation > p {
+    font-size: 14px;
+}
+
+.itemDetail {
+    width: fit-content;
+    background-color: #007264;
+    margin: 5px;
+    color: var(--font-white);
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.itemDetailScroll {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.itemDetailScroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.shoppingItemGrid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: calc(2 * 120px); /* 100px for each row and 10px for the gap between rows */
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    scrollbar-width: none;
+}
+
+.shoppingItemGrid::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.shoppingItemContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(auto, 1fr)); /* Display a maximum of 2 rows */
+}
+
+.shoppingItemFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addItemSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px; /* Add padding instead of using calc() */
+    box-sizing: border-box; /* Include box-sizing property */
+}
+
+.selectorBox {
+    width: 100%;
+    background: var(--secondary);
+    display: flex;
+    color: var(--font-white);
+    justify-content: space-between; /* Change from 'space-between' to 'center' */
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+}
