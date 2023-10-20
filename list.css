@@ -176,3 +176,72 @@ body {
     border-radius: 12px;
     cursor: pointer;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+
+.searchbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.search input{
+    height: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 10px;
+    border: none;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+#submitBtnAddToList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary);
+    color: var(--font-white);
+}
+
+#submitBtnAddToList:hover {
+    background-color: #007264;
+    cursor: pointer;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: var(--font-grey);
+    background-color: var(--secondary);
+    padding: 10px;
+    gap: 50px; /* Add this line */
+    margin-top: 0.5rem;
+}
+
+.toolIcon {
+    font-size: 10px;
+}
